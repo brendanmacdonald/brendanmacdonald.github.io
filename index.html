@@ -3,183 +3,62 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body {
-  margin: 0;
-  font-family: "Lato", sans-serif;
-}
-
-.sidebar {
-  text-indent: 10%;
-  width: 250px;
-  background-color: #f1f1f1;
-  position: fixed;
-  height: 100%;
-}
-
-.sidebar a {
-  display:inherit;
-  color: black;
-  padding: 16px;
-  text-decoration: none;
-}   
- 
-.sidebar a.active {
-  background-color: #04AA6D;
-  color: white;
-}
-
-.sidebar a:hover:not(.active) {
-  background-color: #555;
-  color: white;
-}
-
-div.content {
-  margin-left: 350px;
-  padding: 100px 16px;
-  height: 1000px;
-}
-
-section {
-    font-size: 1.5rem;
-    font-weight: 500;
-    width:60%;
-    margin-top: 150px;
-}        
-
-.icons {
-    display: inline;
-    margin-top:10px;
-
-}
-
-hr {
-        width: 70%;
-        margin-left: 0px;
-
-      }
-
-@media screen and (max-width: 700px) {
-  .sidebar {
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
-  .sidebar a {float: left;}
-  div.content {margin-left: 0;}
-}
-
-@media screen and (max-width: 400px) {
-  .sidebar a {
-    text-align: center;
-    float: none;
-  }
-  section {
-    width:100%
-    }
-}
-</style>
+<link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
     <div class="sidebar">
-        <a class="active" href="#top"><i class="fa fa-fw fa-home fa-2x" aria-hidden="true"></i>&nbsp; Home</a>
-        <a href="#project1"><i class="fa fa-fw fa-bar-chart fa-2x" style="font-size:20px"></i>&nbsp; Project 1</a>
-        <a href="#project2"><i class="fa fa-fw fa-bar-chart" style="font-size:20px" ></i>&nbsp; Project 2</a>
-        <a href="#project3"><i class="fa fa-fw fa-bar-chart" style="font-size:20px"></i>&nbsp; Project 3</a>
-
+        <a class="active" href="#top">  &nbsp; Home</a>
+        <a href="#cv">&nbsp; CV</a>
+        <!--<a href="#project1">&nbsp; Project 1</a>
+        <a href="#project2">&nbsp; Project 2</a>
+        <a href="#project3">&nbsp; Project 3</a>-->
         <div class="icons">
             <br><br><br>
-            <a href="https://www.linkedin.com/in/brendan-macdonald/"><i class="fa fa-fw fa-linkedin fa-2x" aria-hidden="true"></i></a>
-            <a href="mailto:macbrendan@gmail.com" ><i class="fa fa-fw fa-envelope fa-2x" aria-hidden="true"></i></a>
-            <a href="#" ><i class="fa fa-fw fa-github fa-2x" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/brendan-macdonald/" target="_blank"><i class="fa fa-fw fa-linkedin fa-2x" aria-hidden="true"></i></a>
+            <a href="mailto:macbrendan@gmail.com" target="_blank"><i class="fa fa-fw fa-envelope fa-2x" aria-hidden="true"></i></a>
+            <a href="https://github.com/brendanmacdonald" target="_blank"><i class="fa fa-fw fa-github fa-2x" aria-hidden="true"></i></a>
         </div>
 </div>
 
 <div class="content">
-    <!--About this site-->
+    <!--About-->
     <section>
         <h2>About me and this site</h2>
-        <p>I have been a Test Analyst for 20 years. My aim for 2023 is to transition to a Data Analyst role for the seond half of my career.</p>
-        <p>To make this happen, I have spent the last year studying data analysis processes and tools in order to upskill myself to a sufficient level to take on a junior data analyst role. I divided my efforts across 7 subjects:</p>
+        <p>I have been a Test Analyst for 20 years. My aim for 2023 is to transition to a Data Analyst role for the second half of my career.</p>
+        <p>To make this happen, I have spent the last year studying data analysis processes and tools in order to upskill myself to a sufficient level to take on a junior data analyst role. I divided my study time across 7 subjects:</p>
         <ol>
             <li>Power BI</li>
             <li>Data Modeling</li>
             <li>DAX</li>
             <li>SQL</li>
             <li>Data Warehousing</li>
+            <li>Data Analytics</li>
+            <li>Power Platform</li>
         </ol> 
-        <p>I used multiple different online course providers that supplied video content and course materials. As can be seen from the report, the core of my studies have been course material provided by Microsoft.</p>
-        <p>I have received certifications from all of the courses that I have done, where one was provided. Additionally, I have to-date sat and passed one related exam, 'PL-900 Microsoft Power PLatform Fundamentals' and I am aiming to sit the 'PL-300: Microsoft Power BI Data Analyst' in the coming months.</p>
+        <p>I used multiple different online course providers that supplied video content and course materials. The core of my studies have been course material provided by Microsoft and LinkedIn Learning.</p>
+        <p>I have received certifications from all of the courses that I have done, where one was provided. Additionally, I have sat and passed one related exam, 'PL-900 Microsoft Power Platform Fundamentals'. I am aiming to sit the 'PL-300: Microsoft Power BI Data Analyst' in the coming months.</p>
     </section>
-    <hr />
+
+    <!--CV-->
 
     <!--Project 1-->
     <section id="project1">
-        <h1>Project 1</h1>
-        <h3>Overview</h3>
-        <p>I used my first Power BI report to illustrate my studies over the last year. This report details the subjects, course providers and study methods I have used to get myself into a position to start a Junior Data Analyst position.</p>
-        
-
-        <h3>Data Source</h3>
-        <p>A Google sheet was used as the <a href="https://docs.google.com/spreadsheets/d/1ySGSSYFHUVS6bYL9vB1RE5CDyp_Gvzh_jvitvF1hZTw/edit#gid=1946428453">source data.</a> Since the data set was small,  import mode was used with all data stored in Power BI.</p>
-
-        <h3>Data Model</h3>
-        <p>Add screenshot of data model</p>
-
-        <h3>Tools</h3>
-        <p>List tools used - Power Bi, Google sheets</p>
-
-        <h3>Screenshots</h3>
-        <p>Add screenshots and gifs</p>
-        <p>Add link to PowerService instead of iframe</p>
-       
+      <h2>Project 1 - Learnings</h2>
+      <iframe title="Learnings" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=cb9acae6-7625-4507-a2c3-0198170892c9&autoAuth=true&ctid=fec7d103-fab8-4207-b079-47b6c812770e" frameborder="1" allowFullScreen="true"></iframe>
     </section>
-    <hr />
 
     <!--Project 2-->
     <section id="project2">
-        <h1>Project 2</h1>
-        <h3>Overview</h3>
-        <p>TBC</p>
-        
-
-        <h3>Data Source</h3>
-        <p>TBC.</p>
-
-        <h3>Data Model</h3>
-        <p>TBC - Add screenshot of data model</p>
-
-        <h3>Tools</h3>
-        <p>TBC - List tools used</p>
-
-        <h3>Screenshots</h3>
-        <p>TBC - Add screenshots and gifs</p>
-        <p>TBC - Add link to PowerService instead of iframe</p>
+      <h2>Project 2 - Parkrun</h2>
+      <iframe title="Parkrun" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=e450f2c4-dd62-45e6-ab9f-ad997631551a&autoAuth=true&ctid=fec7d103-fab8-4207-b079-47b6c812770e" frameborder="1" allowFullScreen="true"></iframe>
     </section>
-    <hr />
 
     <!--Project 3-->
     <section id="project3">
-        <h1>Project 3</h1>
-        <h3>Overview</h3>
-        <p>TBC</p>
-        
-
-        <h3>Data Source</h3>
-        <p>TBC.</p>
-
-        <h3>Data Model</h3>
-        <p>TBC - Add screenshot of data model</p>
-
-        <h3>Tools</h3>
-        <p>TBC - List tools used</p>
-
-        <h3>Screenshots</h3>
-        <p>TBC - Add screenshots and gifs</p>
-        <p>TBC - Add link to PowerService instead of iframe</p>
+      <h2>Project 3 - Adventure Works</h2>
+      <iframe title="Adventure Works" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=83ac7adb-4553-4802-aec5-6d1891bb6578&autoAuth=true&ctid=fec7d103-fab8-4207-b079-47b6c812770e" frameborder="1" allowFullScreen="true"></iframe>
     </section>
-    <hr />
 </div>
 
 

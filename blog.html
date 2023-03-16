@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/style.css">
+
+</head>
+<body>
+
+    <div class="sidebar">
+        <a class="active" href="#top">&nbsp; Home</a>
+        <a href="#cv">&nbsp; CV</a>
+        <a href="#blog">&nbsp; Blog</a>
+        <!--<a href="#project1">&nbsp; Project 1</a>
+        <a href="#project2">&nbsp; Project 2</a>
+        <a href="#project3">&nbsp; Project 3</a>-->
+        <div class="icons">
+            <br><br><br>
+            <a href="https://www.linkedin.com/in/brendan-macdonald/" target="_blank"><i class="fa fa-fw fa-linkedin fa-2x" aria-hidden="true"></i></a>
+            <a href="mailto:macbrendan@gmail.com" target="_blank"><i class="fa fa-fw fa-envelope fa-2x" aria-hidden="true"></i></a>
+            <a href="https://github.com/brendanmacdonald" target="_blank"><i class="fa fa-fw fa-github fa-2x" aria-hidden="true"></i></a>
+        </div>
+</div>
+
+<div class="content">
+    <!--Blog-->
+    <section>
+        <h2>How to take a text value of the format MM:SS and convert it to a Duration datatype.</h2>
+        <h5>16-03-2023</h5>
+        <p>When I imported some data from the <a href="https://www.parkrun.org.uk/">Parkrun UK website</a>, the elapsed run time column with a value of 'MM:SS' (minutes and seconds) automatically had a datatype assigned of 'Text'. In order to use this column more accurately, I tried setting the datatype to 'Duration' in Power Query editor but it errored. To get around this error, I did the following:</p>
+        <ol>
+            <li>In Power Query editor, split the column on the semicolon. This resulted in two new columns I labelled 'Time Minutes' and 'Time Seconds'.</li>
+            <li>Create a custom column with the following formula:
+                <ul>
+                        <li># #duration(0,0,[Time Minutes],[Time Seconds])
+                        </li>
+                </ul>
+            </li>
+            <li>Set the datatype of the custom column to Duration.</li>
+            <li>Close and apply the changes.</li>
+            <li>In the modelling view, set the custom column to have a datatype of Time and set the format to be h:nn:ss</li>
+        </ol>
+    </section>
+    <hr />
+</div>
+</body>
+</html>
