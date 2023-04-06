@@ -1,67 +1,101 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <title>Brendan MacDonald - Reports Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Custom styles -->
+  <style>
+    /* Style for the header bar */
+    .header {
+      background-color: #333;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: px;
+      z-index: 100;
+      color: #fff;
+      padding: 10px;
+    }
+
+  </style>
 </head>
 <body>
-
-    <div class="sidebar">
-        <a class="active" href="./index.html">  &nbsp; Home</a>
-        <a href="#cv">&nbsp; CV</a>
-        <a href="./blog.html">&nbsp; Blog</a>
-        <!--<a href="#project1">&nbsp; Project 1</a>
-        <a href="#project2">&nbsp; Project 2</a>
-        <a href="#project3">&nbsp; Project 3</a>-->
-        <div class="icons">
-            <br><br><br>
-            <a href="https://www.linkedin.com/in/brendan-macdonald/" target="_blank"><i class="fa fa-fw fa-linkedin fa-2x" aria-hidden="true"></i></a>
-            <a href="mailto:macbrendan@gmail.com" target="_blank"><i class="fa fa-fw fa-envelope fa-2x" aria-hidden="true"></i></a>
-            <a href="https://github.com/brendanmacdonald" target="_blank"><i class="fa fa-fw fa-github fa-2x" aria-hidden="true"></i></a>
+  <!-- Header bar -->
+  <div class="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5">
+          <h4>Brendan MacDonald - Reports Portfolio</h4>
         </div>
-</div>
+        <div class="col-md- text-right">
+		  <a href="#" target="" title="CV" class="btn btn-outline-light mx-2"><i class="fa fa-file fa-fw"></i> CV</a>
+		  <a href="https://www.linkedin.com/in/brendan-macdonald/" target="_blank" title="LinkedIn" class="btn btn-outline-light mx-2"><i class="fa fa-linkedin fa-fw"></i> LinkedIn</a>
+		  <a href="https://github.com/brendanmacdonald/" target="_blank" title="GitHub" class="btn btn-outline-light mx-2"><i class="fa fa-github fa-fw"></i> GitHub</a>
+		  <a href="mailto:macbrendan@gmail.com" target="_blank" title="Email" class="btn btn-outline-light mx-2"><i class="fa fa-envelope fa-fw"></i> Email</a>
+		</div>
+      </div>
+    </div>
+  </div>
+  <!-- Main content -->
+  <div class="container pt-5 mt-5"> 
 
-<div class="content">
-    <!--About-->
-    <section>
-        <h2>About me and this site</h2>
-        <p>I have been a Test Analyst for 20 years. My aim for 2023 is to transition to a Data Analyst role for the second half of my career.</p>
-        <p>To make this happen, I have spent the last year studying data analysis processes and tools in order to upskill myself to a sufficient level to take on a junior data analyst role. I divided my study time across 7 subjects:</p>
-        <ol>
-            <li>Power BI</li>
-            <li>Data Modeling</li>
-            <li>DAX</li>
-            <li>SQL</li>
-            <li>Data Warehousing</li>
-            <li>Data Analytics</li>
-            <li>Power Platform</li>
-        </ol> 
-        <p>I used multiple different online course providers that supplied video content and course materials. The core of my studies have been course material provided by Microsoft and LinkedIn Learning.</p>
-        <p>I have received certifications from all of the courses that I have done, where one was provided. Additionally, I have sat and passed one related exam, 'PL-900 Microsoft Power Platform Fundamentals'. I am aiming to sit the 'PL-300: Microsoft Power BI Data Analyst' in the coming months.</p>
-    </section>
+ 	<div class="card mb-4">
+      <div class="card-header">
+        <h5 class="card-title">About Me</h5>
+      </div>
+      <div class="card-body">
+       <p>I have been a Test Analyst for 20 years. My aim for 2023 is to transition to a Data Analyst role for the second half of my career.</p>
+       <p>To make this happen, I have spent the last year studying data analysis processes and tools in order to upskill myself to a sufficient level to take on a junior data analyst role. I divided my study time across 7 subjects:</p>
+       <ol>
+           <li>Power BI</li>
+           <li>Data Modeling</li>
+           <li>DAX</li>
+           <li>SQL</li>
+           <li>Data Warehousing</li>
+           <li>Data Analytics</li>
+           <li>Power Platform</li>
+       </ol> 
+       <p>I used multiple different online course providers that supplied video content and course materials. The core of my studies have been course material provided by Microsoft and LinkedIn Learning.</p>
+       <p>I have received certifications from all of the courses that I have done, where one was provided. Additionally, I have sat and passed one related exam, 'PL-900 Microsoft Power Platform Fundamentals'. I am aiming to sit the 'PL-300: Microsoft Power BI Data Analyst' in the coming months.</p>
+      </div>
+    </div>
 
-    <!--CV-->
+	<div class="card mb-4">
+      <div class="card-header">
+        <h5 class="card-title">PowerBI Report 1</h5>
+      </div>
+      <div class="card-body">
+		  <iframe title="Parkrun" width="1024" height="612" src="https://app.powerbi.com/view?r=eyJrIjoiYjc2YzM5OWQtMDhmOS00OTE1LWI4OTUtMjE1MTI3ZGY2MjczIiwidCI6ImZlYzdkMTAzLWZhYjgtNDIwNy1iMDc5LTQ3YjZjODEyNzcwZSJ9" frameborder="0" allowFullScreen="true"></iframe>
+      </div>
+    </div>
+  
+    <div class="card mb-4">
+      <div class="card-header">
+        <h5 class="card-title">PowerBI Report 1</h5>
+      </div>
+      <div class="card-body">
+          <iframe title="Report Section" width="1024" height="612" src="https://app.powerbi.com/view?r=eyJrIjoiY2RiZjhiY2MtNDY4NS00YWM3LWIzZGItYWRmZmU5YmU0NjkxIiwidCI6ImZlYzdkMTAzLWZhYjgtNDIwNy1iMDc5LTQ3YjZjODEyNzcwZSJ9" frameborder="0" allowFullScreen="true"></iframe>
+      </div>
+    </div>
+	
+	<div class="card mb-4">
+      <div class="card-header">
+        <h5 class="card-title">PowerBI Report 1</h5>
+      </div>
+      <div class="card-body">
+          <iframe title="Report Section" width="1024" height="612" src="https://app.powerbi.com/view?r=eyJrIjoiY2RiZjhiY2MtNDY4NS00YWM3LWIzZGItYWRmZmU5YmU0NjkxIiwidCI6ImZlYzdkMTAzLWZhYjgtNDIwNy1iMDc5LTQ3YjZjODEyNzcwZSJ9" frameborder="0" allowFullScreen="true"></iframe>
+      </div>
+    </div>
+	
+  </div>
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper
 
-    <!--Project 1-->
-    <section id="project1">
-      <h2>Project 1 - Learnings</h2>
-      <iframe title="Report Section" width="1024" height="612" src="https://app.powerbi.com/view?r=eyJrIjoiY2RiZjhiY2MtNDY4NS00YWM3LWIzZGItYWRmZmU5YmU0NjkxIiwidCI6ImZlYzdkMTAzLWZhYjgtNDIwNy1iMDc5LTQ3YjZjODEyNzcwZSJ9" frameborder="0" allowFullScreen="true"></iframe>
-    </section>
-
-    <!--Project 2-->
-    <section id="project2">
-      <h2>Project 2 - Parkrun</h2>
-      <iframe title="Report Section" width="1024" height="612" src="https://app.powerbi.com/view?r=eyJrIjoiYjc2YzM5OWQtMDhmOS00OTE1LWI4OTUtMjE1MTI3ZGY2MjczIiwidCI6ImZlYzdkMTAzLWZhYjgtNDIwNy1iMDc5LTQ3YjZjODEyNzcwZSJ9" frameborder="0" allowFullScreen="true"></iframe>
-    </section>
-
-    <!--Project 3-->
-    <section id="project3">
-      <h2>Project 3 - Adventure Works</h2>
-      <iframe title="Adventure Works" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=83ac7adb-4553-4802-aec5-6d1891bb6578&autoAuth=true&ctid=fec7d103-fab8-4207-b079-47b6c812770e" frameborder="1" allowFullScreen="true"></iframe>
-    </section>
-</div>
-
-
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
 </html>
