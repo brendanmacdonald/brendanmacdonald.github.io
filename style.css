@@ -54,7 +54,7 @@ h3 {
 }
 
 p {
-	font-size: 14px;
+	font-size: 18px;
 	color: #333;
 	margin-bottom: 5px;
 }
@@ -91,9 +91,21 @@ a:hover {
 }
 
 .iframe-div {
-	overflow: hidden; 
-	padding-bottom: 56.25%; 
+	/*overflow: hidden; */
+	padding-bottom: 58%; 
 	position: relative;
+	padding-top: 5%;
 }
 
-
+.badge-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .badge-image {
+    width: 120px; /* Adjust the width as needed */
+    height: auto; /* Automatically adjust the height to maintain the aspect ratio */
+    margin: 0 10px; /* Adjust the margin as needed */
+  }
