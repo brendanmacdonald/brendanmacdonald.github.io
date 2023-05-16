@@ -1,18 +1,5 @@
-/* Style for the header bar */
-.header {
-	background-color: #333;
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: px;
-	z-index: 100;
-	color: #fff;
-	padding: 10px;
-}
-
 /* Styling for the collapsed menu */
-@media (max-width: 567.98px) {
+@media (max-width: 767.98px) {
 	.navbar-nav {
 		margin-top: 10px;
 	}
@@ -28,41 +15,20 @@
 	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 	padding: 20px;
 	background-color: #fff;
-	border-radius: 15px;
+	border-radius: 20px;
 }
 
 .card-title {
 	font-size: 24px;
 	font-weight: bold;
 	color: #333;
-	margin-bottom: 5px;
-}
-
-h2 {
-	font-size: 24px;
-	font-weight: bold;
-	color: #333;
-	margin-bottom: 20px;
-}
-
-h3 {
-	font-size: 20px;
-	font-weight: bold;
-	color: #333;
-	margin-top: 40px;
-	margin-bottom: 20px;
+	margin-bottom: 0px;
 }
 
 p {
-	font-size: 18px;
+	font-size: 16px;
 	color: #333;
 	margin-bottom: 5px;
-}
-
-ul {
-	font-size: 14px;
-	color: #333;
-	margin-bottom: 20px;
 }
 
 li {
@@ -77,35 +43,30 @@ li {
 	transition: all 0.3s ease-in-out;
 }
 
-a:hover {
-	background-color: rgba(0, 0, 0, 0.1);
-	text-decoration: none;
-}
-
 .iframe-report {
 	position: absolute; 
-	top: 0; 
-	left: 0;
+	top: 5px; 
+	bottom: 5px; 
 	width:100%;
 	height: 100%;
 }
 
 .iframe-div {
 	/*overflow: hidden; */
-	padding-bottom: 58%; 
+	padding-bottom: 65%; 
 	position: relative;
-	padding-top: 5%;
+	
 }
 
 .badge-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 10px;
   }
   
   .badge-image {
-    width: 120px; /* Adjust the width as needed */
+    width: 100px; /* Adjust the width as needed */
     height: auto; /* Automatically adjust the height to maintain the aspect ratio */
     margin: 0 10px; /* Adjust the margin as needed */
   }
